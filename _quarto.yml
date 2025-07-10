@@ -1,0 +1,30 @@
+logo: "img/logo.png"
+date: today
+lang: fr
+contributes:
+  formats:
+      number-sections: true
+      toc: true
+bibliography: bibliography.bib
+published: false # will be set to true once accepted
+
+format:
+  html:
+    theme: computo-html
+    icon: gitlab
+    title-block-banner: "#0c3762"
+    license: "CC BY"
+    toc: true
+    number-sections: true
+    anchor-sections: true
+    template-partials:
+        - "title-block.html"
+  pdf:
+    toc: true
+
+citation:
+  type: "article-journal"
+  container-title: "Rzine"
+  issn: "ISSN 2743-8791"
+
+

@@ -1,0 +1,7 @@
+# Quarto automatically excludes common GitHub files
+# You can add files here that should be excluded when the template
+# is used in a directory.
+
+
+.gitlab-ci.yml
+.gitignore

@@ -1,0 +1,162 @@
+---
+title: "Revue Rzine"
+subtitle: "Article de méthode mise en application avec R"
+author:
+  - name: "Auteur.rice 1"
+    url: "https://rzine.fr"
+    affiliations:
+      - name: "établissement"
+        url: "https://xxxxx.fr"
+    orcid: 0000-0000-0000-0000
+  - name: "Auteur.rice 2"
+    url: "https://rzine.fr"
+    affiliations:
+      - name: "établissement"
+        url: "https://xxxxx.fr"
+    orcid: 0000-0000-0000-0000
+doi: "10.xxxx/xxx-xxx"
+other-links:
+  - text: Code source
+    icon: github
+    href: "https://github.com/rzine-reviews/nom_du_depot_de_larticle"
+keywords: [template, quarto, R, Python, reproductibility]
+abstract: |
+  This is the abstract - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere vestibulum facilisis. Aenean pretium orci augue, quis lobortis libero accumsan eu. Nam mollis lorem sit amet pellentesque ullamcorper. Curabitur lobortis libero eget malesuada vestibulum. Nam nec nibh massa. Pellentesque porttitor cursus tellus. Mauris urna erat, rhoncus sed faucibus sit amet, venenatis eu ipsum.
+draft: true # set to false once the build is running
+# announcement:
+#     icon: info-circle
+#     dismissable: true
+#     content: "En cours de rédaction"
+#     type: success
+#     position: below-navbar
+---
+
+
+# Métadonnées du document
+
+L’en-tête d’un document Quarto[^1] (aussi appelé YAML) est délimité par deux lignes de pointillés et contient les métadonnées et les éléments de style du document. Il sert à recueillir le titre de votre contribution et des informations supplémentaires sur votre affiliation, des mots-clés, etc. 
+
+[^1]: Quarto est un système open-source de publication d'articles scientifiques et techniques basé sur Pandoc. 
+
+# Rédiger un article
+
+Pour les bonnes pratiques de mise en page d'un article exécutable, veuillez consulter la page de documentation suivante : [Rédiger un article](https://rzine.fr/documentation/redaction/)
+
+
+# Quelques rappels
+
+## Écrire du texte
+
+Le contenu écrit de votre contribution, présentant votre démarche et explicitant la succession des traitements partagés, est à mettre en forme en **markdown**. 
+
+## Bloc de code (chunk)
+
+Le code est à inclure dans des *chunks*. Pour insérer un nouveau *chunk*, plusieurs solutions possibles :
+
+* utiliser le menu Code > Insert Chunk de RStudio
+* utiliser le raccourci clavier Ctrl + Alt + i
+
+
+## *Chunk* pour inclure une image externe
+
+```{r, echo=T}
+#| fig-align: center
+#| fig-cap: "Exemple d'image"
+#| fig-cap-location: top
+knitr::include_graphics("img/logo.png") # lien vers le fichier image
+```
+
+## *Chunk* pour insérer un tableau
+
+```{r, echo=T}
+#| tbl-align: center
+#| tbl-cap: Exemple de tableau
+#| tbl-cap-location: top
+knitr::kable(head(iris))
+```
+
+:::{.callout-note}
+# Appel des figures et des tableaux
+Figures et tableaux doivent être numérotés et appelés dans le corps du document.
+:::
+
+## Options du *chunk*
+
+
+```{r}
+# Exécute le code du chunk
+#| eval: true
+
+# Affiche le code
+#| echo: true
+
+# Affiche les warnings
+#| warning: true
+
+# Identifiant du chunk
+#| label: fig-1
+
+# Titre de l'image
+#| fig-cap: Un exemple d'image
+
+# Alignement de l'image dans la page
+#| fig-align: left, right, center
+
+# Dimension verticale
+#| fig-height: 3
+
+# Dimension horizontale
+#| fig-width: 7
+
+# Voir une version de l'image élargie
+#| lightbox: true
+```
+
+
+# Compiler votre article 
+
+Cliquer sur le bouton **Render** dans l'IDE RStudio, cela génère un article au format HTML suivant le modèle de mise en page Rzine qui contient votre article et son code embarqué.
+Vous pouvez également utiliser le raccourci `Ctrl + Maj + K`.
+
+Pour compiler votre article et la version PDF, utilisez le terminal de RStudio en tapant la commande  `quarto render`.
+
+
+# Mise à disposition des données
+
+Tout·e lecteur·ice doit être en mesure de reproduire la démonstration de l’article sans contrainte de réutilisation. 
+Les données utilisées doivent être :
+
+* correctement présentées dans l’article
+* décrites par des métadonnées
+* libres d’utilisation et de diffusion
+* mises à disposition des lecteur·rice·s, même si ces données sont déjà en libre accès
+* respectueuses du règlement général sur la protection des données
+
+**Toutes les données utilisées dans l’article doivent être stockées dans le répertoire `data`.**
+
+# Références bibliographiques
+
+Renseignez les références bibliographiques utilisées dans le fichier `bibliography.bib`. 
+
+Vous pouvez les appeler dans le document de la nmière suivante : @CameronTrivedi2013
+
+Les citations longues des références utilisées sont automatiquement listé en fin d'article dans la section `Bibliographie`
+
+
+# Bibliographie
+
+::: {#refs}
+:::
+
+
+# Annexes
+
+## Informations de session
+
+Affichez les informations de votre session en fin d'article avec 
+
+```{r session-info}
+sessionInfo()
+```
+
+
