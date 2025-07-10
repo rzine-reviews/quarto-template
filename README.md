@@ -4,7 +4,7 @@
 ### Créer un nouvel article
 
 
-```quarto add HuguesPecout/test```
+```quarto add  rzine-reviews/quarto-template```
 
 Pour voir le rendu graphique du template, cliquez [**ici**](https://quarto-rzine-9f4249.gitpages.huma-num.fr/)
 
