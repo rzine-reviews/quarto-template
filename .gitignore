@@ -19,8 +19,6 @@
 
 # RStudio files
 .Rproj.user/
-.Rproj/
-
 
 # produced vignettes
 vignettes/*.html
@@ -38,8 +36,6 @@ vignettes/*.pdf
 .git
 
 
-data/com.gpkg
-
 /.quarto/
 
 # caches
@@ -47,11 +43,4 @@ data/com.gpkg
 /figs/
 *_cache/
 /cache/
-/_freeze/$
-
-
-# Output quarto
-template.html
-/template_files
-*.Rproj
-
+/_freeze/

@@ -1,7 +1,4 @@
-# Quarto automatically excludes common GitHub files
-# You can add files here that should be excluded when the template
-# is used in a directory.
-
-
-.gitlab-ci.yml
-.gitignore
+# Add files / folder that are useful to your repo
+# but should not be in the downloaded bundle after `quarto use template`
+style-guide
+.github

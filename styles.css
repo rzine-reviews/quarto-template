@@ -1,8 +1,0 @@
-/* styles.css */
-
-/* 1) On limite la largeur de la navbar au même max que le body
-   (remplacez 900px par la valeur de votre body-width si vous l'avez définie) */
-nav.navbar .container-fluid {
-  margin: 0 auto;        /* centre horizontalement */
-  padding: 0 1rem;       /* garde le padding standard */
-}

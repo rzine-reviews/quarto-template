@@ -1,30 +1,47 @@
-logo: "img/logo.png"
+project:
+  title: "rzine-quarto-extension"
+  render: 
+    - index.qmd
+
+
+title: Revue Rzine
+subtitle: "Articles méthodologiques mis en application avec R"
 date: today
-lang: fr
-contributes:
-  formats:
-      number-sections: true
-      toc: true
-bibliography: bibliography.bib
-published: false # will be set to true once accepted
+# date-modified: last-modified
+author:
+  - name: "Auteur·rice 1"
+    url: "https://rzine.fr"
+    affiliations:
+      - name: "Etablissement 1"
+        url: "https://xxxxx.fr"
+    orcid: 0000-0000-0000-0000
+  - name: "Auteur·rice 2"
+    url: "https://rzine.fr"
+    affiliations:
+      - name: "Etablissement 2"
+        url: "https://xxxxx.fr"
+    orcid: 0000-0000-0000-0000
+    
+keywords: [template, quarto, R, reproductibility, rzine]
+abstract: |
+  This is the abstract - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere vestibulum facilisis. Aenean pretium orci augue, quis lobortis libero accumsan eu. Nam mollis lorem sit amet pellentesque ullamcorper. Curabitur lobortis libero eget malesuada vestibulum. Nam nec nibh massa. Pellentesque porttitor cursus tellus. Mauris urna erat, rhoncus sed faucibus sit amet, venenatis eu ipsum.
+
+draft: true # set to false once the build is running
+published: false 
+doi: "10.xxxx/xxx-xxx"
+
+other-links:
+  - text: Code source de l'article
+    icon: github
+    href: "https://github.com/rzine-reviews/nom_du_depot_de_larticle"
+
+embed-resources: true
+lang: fr-FR 
+repo: "template"
 
 format:
-  html:
-    theme: computo-html
-    icon: gitlab
-    title-block-banner: "#0c3762"
-    license: "CC BY"
-    toc: true
-    number-sections: true
-    anchor-sections: true
-    template-partials:
-        - "title-block.html"
-  pdf:
-    toc: true
+  rzine-html: default
+  rzine-pdf: default
 
-citation:
-  type: "article-journal"
-  container-title: "Rzine"
-  issn: "ISSN 2743-8791"
 
 

@@ -8,7 +8,7 @@ Modèle de mise en page [Quarto](https://quarto.org) pour les articles de la rev
 You can use this as a template to create an article for Rzine. To do this, use the following command:
 
 ```bash
-quarto use template rzine-rewiew/quarto-template
+quarto use template rzine-rewiew/template
 ```
 
 This will install the extension and create an example qmd file and bibiography that you can use as a starting place for your article.
@@ -18,7 +18,7 @@ This will install the extension and create an example qmd file and bibiography t
 You may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:
 
 ```bash
-quarto add template rzine-rewiew/quarto-template
+quarto add template rzine-rewiew/template
 ```
 
 ## Usage

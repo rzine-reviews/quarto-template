@@ -1,0 +1,106 @@
+
+# Métadonnées du document
+
+L’en-tête d’un document Quarto (aussi appelé YAML) est délimité par deux lignes de pointillés et contient les métadonnées et les éléments de style du document. Il sert à recueillir le titre de votre contribution et des informations supplémentaires sur votre affiliation, des mots-clés, etc. 
+
+
+# Rédiger un article
+
+Pour les bonnes pratiques de mise en page d'un article exécutable veuillez consulter la page de documentation suivante : [Rédiger un article](https://rzine.fr/documentation/redaction/)
+
+
+# Quelques rappels
+
+## Ecrire du texte
+
+Le contenu écrit de votre contribution, présentant votre démarche et explicitant la succession des traitements partagés est à mettre en forme en **markdown**. 
+
+## Bloc de code (chunks)
+
+Le code est à inclure dans des *chunks*. Pour insérer un nouveau *chunk*, plusieurs solutions possibles :
+
+* Utiliser le menu Code > Insert Chunk de RStudio.
+* Utiliser le raccourci clavier Ctrl + Alt + i
+
+
+## *Chunk* pour inclure une image externe
+
+```{r, echo=T}
+#| fig-align: center
+#| fig-cap: "Exemple d'image"
+#| fig-cap-location: top
+knitr::include_graphics("figures/logo.png") # lien vers le fichier image
+```
+
+## *Chunk* pour insérer un tableau
+
+```{r, echo=T}
+#| tbl-align: center
+#| tbl-cap: Exemple de tableau
+#| tbl-cap-location: top
+knitr::kable(head(iris))
+```
+
+
+## Options du *chunk*
+
+
+```{r}
+# Exécute le code du chunk
+#| eval: true
+
+# Affiche le code
+#| echo: true
+
+# Affiche les warnings
+#| warning: true
+
+# Identifiant du chunk
+#| label: fig-1
+
+# Titre de l'image
+#| fig-cap: Un exemple d'image
+
+# Alignement de l'image dans la page
+#| fig-align: left, right, center
+
+# Dimension verticale
+#| fig-height: 3
+
+# Dimension horizontale
+#| fig-width: 7
+```
+
+# Compiler votre article 
+
+Cliquer sur le bouton **Render** dans l'IDE RStudio, cela générera un article au format HTML suivant le modèle de mise en page Rzine qui contiendra votre article et son code embarqué.
+Vous pouvez également utiliser le raccourci suivant : Ctrl + Maj + K
+
+Pour compiler votre article et la version PDF, utilisez le terminal de RStudio en tapant la commande suivante : **quarto render**
+
+# Références bibliographiques
+
+Une bibliographie est a minima attendue. Elle sert à positionner votre contribution dans le champ thématique et/ou disciplinaire. Le glossaire est optionnel mais permet souvent utilement de rendre plus fluide le corps du document principal. 
+
+
+# Mise à disposition des données
+
+Tout·e lecteur·ice doit être en mesure de reproduire la démonstration de l’article sans contrainte de réutilisation. 
+L’intégralité des données utilisées doivent obligatoirement être :
+
+* Correctement présentées dans l’article
+* Libre d’utilisation et de diffusion
+* Mises à disposition des lecteur·rice·s, même si ces données sont déjà en libre accès
+* Décrites par des métadonnées
+* Respectueuses du règlement général sur la protection des données
+
+**Toutes les données utilisées dans l’article devront être stockées dans le répertoire data.**
+
+# Versions utilisées
+
+Dans l'objectif de reproduire votre contenu, il est utile  d'afficher les informations de votre session en fin d'article.
+
+```{r session-info}
+sessionInfo()
+```
+
