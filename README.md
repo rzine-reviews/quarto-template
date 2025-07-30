@@ -2,6 +2,8 @@
 
 **Modèle de mise en page [Quarto](https://quarto.org) pour la revue Rzine** : **https://rzine-reviews.github.io/rzine-article-template/**
 
+![](figures/screenshot.png)
+
 
 ## I. Utiliser le template
 
