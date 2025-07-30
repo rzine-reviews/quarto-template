@@ -4,7 +4,7 @@ project:
     - index.qmd
 
 
-title: Revue Rzine
+title: Rzine
 subtitle: "Articles méthodologiques mis en application avec R"
 date: today
 # date-modified: last-modified
@@ -22,16 +22,16 @@ author:
         url: "https://xxxxx.fr"
     orcid: 0000-0000-0000-0000
     
-keywords: [template, quarto, R, reproductibility, rzine]
+keywords: [Rzine, article, template, Quarto, R, reproductibility]
 abstract: |
-  This is the abstract - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere vestibulum facilisis. Aenean pretium orci augue, quis lobortis libero accumsan eu. Nam mollis lorem sit amet pellentesque ullamcorper. Curabitur lobortis libero eget malesuada vestibulum. Nam nec nibh massa. Pellentesque porttitor cursus tellus. Mauris urna erat, rhoncus sed faucibus sit amet, venenatis eu ipsum.
+     Modéle de mise en page Quarto pour la revue Rzine, qui permet de publier sur des méthodes de SHS, mises en application avec R. Plus d'informations sur [https://rzine.fr](https://rzine.fr).
 
 draft: true # set to false once the build is running
 published: false 
 doi: "10.xxxx/xxx-xxx"
 
 other-links:
-  - text: Code source de l'article
+  - text: Code source
     icon: github
     href: "https://github.com/rzine-reviews/nom_du_depot_de_larticle"
 

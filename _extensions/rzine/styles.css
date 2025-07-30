@@ -14,6 +14,10 @@
    font-size:120%;
 }
 
+.quarto-title-banner a{
+  color:#708090;
+}
+
 a{color:#4178BC;}
 h1{color:#4178BC;}
 h2{color:#4178BC;}

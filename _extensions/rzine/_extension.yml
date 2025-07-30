@@ -14,7 +14,6 @@ contributes:
       bibliography: references.bib  
       csl: universite-de-montreal-apa.csl
       reference-section-title: "Bibliographie"
-      section-title-footnotes: "Glossaire"
       license: "CC BY-SA"
       css: styles.css
       date-format: long
@@ -22,7 +21,10 @@ contributes:
       shortcodes:
         # You can include here Lua filters defining shortcodes from your extension
         - shortcodes.lua
-      
+      citation:
+        type: article-journal
+        container-title: Rzine
+        issn: 2743-8791
     pdf:
       papersize: a4
       geometry: 
@@ -52,6 +54,7 @@ contributes:
           - "partials/html/title-metadata.html"
       hover-citations: true
       hover-footnotes: true
+      section-title-footnotes: "Glossaire"
       format-resources:
         - logo.png
       fig-format: svg
