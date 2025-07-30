@@ -25,6 +25,7 @@ contributes:
         type: article-journal
         container-title: Rzine
         issn: 2743-8791
+        
     pdf:
       papersize: a4
       geometry: 
@@ -40,9 +41,6 @@ contributes:
         - "partials/pdf/include-in-header.tex"
       template-partials:
         - "partials/pdf/before-body.tex"
-      format-resources:
-        - logo.png
-        - cc-by.png
         
     html:
       title-block-banner: "#0c3762"

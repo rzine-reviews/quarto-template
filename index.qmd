@@ -15,7 +15,7 @@ Pour le récupérer en ligne de commande :
 
 
 ```bash
-quarto use template rzine-reviews/quarto-template
+quarto use template rzine-reviews/rzine-article-template
 ```
 
 Cela créé un répertoire sur votre machine contenant un fichier Quarto `index.qmd`, prêt à être complété.

@@ -14,7 +14,7 @@ Ou vous pouvez tout simplement utiliser la ligne de commande suivante :
 
 
 ```bash
-quarto use template rzine-reviews/quarto-template
+quarto use template rzine-reviews/rzine-article-template/
 ```
 
 Cela installe l'extension et créé un répertoire contenant un fichier `index.qmd` (code source de l'article) et des fichiers et répertoires associés.
@@ -25,7 +25,7 @@ Cela installe l'extension et créé un répertoire contenant un fichier `index.q
 Depuis le répertoire contenant le fichier .qmd ciblé :
 
 ```bash
-quarto add template rzine-reviews/quarto-template
+quarto add template rzine-reviews/rzine-article-template/
 ```
 
 ## II. Compiler le document
