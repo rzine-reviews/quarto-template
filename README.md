@@ -2,9 +2,9 @@
 
 **Modèle de mise en page [Quarto](https://quarto.org) pour les articles de la revue Rzine** : https://rzine-reviews.github.io/rzine-article-template/
 
-## I. Utilisez le template
+## I. Utiliser le template
 
-### a. Créez un nouvel article
+### a. Créer un nouvel article
 
 Vous pouvez cloner (ou télécharger) le dépôt pour récupérer le modèle de mise en page.
 
