@@ -1,9 +1,10 @@
-# Article Rzine
+# Template Rzine
 
-Modèle de mise en page [Quarto](https://quarto.org) pour les articles de la revue Rzine : [**Visualiser**](https://rzine-reviews.github.io/rzine-article-template/)
+**Modèle de mise en page [Quarto](https://quarto.org) pour les articles de la revue Rzine** : [**Visualiser**](https://rzine-reviews.github.io/rzine-article-template/)
 
+### 1. Utilisez le template
 
-### 1.A Créez un nouvel article
+#### A Créez un nouvel article
 
 Vous pouvez cloner (ou télécharger) le dépôt pour récupérer le modèle de mise en page.
 
@@ -17,7 +18,7 @@ quarto use template rzine-reviews/quarto-template
 Cela installe l'extension et créé un répertoire contenant un fichier `index.qmd` (code source de l'article) et des fichiers et répertoires associés.
 
 
-## 1.2 Appliquer le modèle à un Quarto existant
+#### B. Appliquer le modèle à un Quarto existant
 
 Depuis le répertoire contenant le fichier .qmd ciblé :
 
@@ -25,7 +26,7 @@ Depuis le répertoire contenant le fichier .qmd ciblé :
 quarto add template rzine-reviews/quarto-template
 ```
 
-## 2. Compliation du document
+### 2. Compiler le document
 
 ```bash
 quarto render index.qmd --to rzine-html
