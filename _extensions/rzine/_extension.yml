@@ -55,8 +55,6 @@ contributes:
       hover-citations: true
       hover-footnotes: true
       section-title-footnotes: "Glossaire"
-      format-resources:
-        - logo.png
       fig-format: svg
       code-summary: "Cacher/Montrer le code"
       code-fold: false
