@@ -41,6 +41,9 @@ contributes:
         - "partials/pdf/include-in-header.tex"
       template-partials:
         - "partials/pdf/before-body.tex"
+      format-resources:
+        - logo.png
+        - cc-by.png
         
     html:
       title-block-banner: "#0c3762"
