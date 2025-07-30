@@ -4,7 +4,6 @@
 
 ![](figures/screenshot.png)
 
-
 ## I. Utiliser le template
 
 ### a. Créer un nouveau document
