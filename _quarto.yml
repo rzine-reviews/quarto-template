@@ -33,7 +33,7 @@ doi: "10.xxxx/xxx-xxx"
 other-links:
   - text: Code source
     icon: github
-    href: "https://github.com/rzine-reviews/nom_du_depot_de_larticle"
+    href: "https://github.com/rzine-reviews/rzine-article-template"
 
 embed-resources: true
 lang: fr-FR 
