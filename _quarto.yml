@@ -22,7 +22,7 @@ author:
         url: "https://xxxxx.fr"
     orcid: 0000-0000-0000-0000
     
-keywords: [Rzine, article, template, Quarto, R, reproductibility]
+keywords: [Rzine, template, Quarto, method, R, reproductibility]
 abstract: |
      Modéle de mise en page Quarto pour la revue Rzine, qui permet de publier sur des méthodes de SHS, mises en application avec R. Plus d'informations sur [https://rzine.fr](https://rzine.fr).
 
