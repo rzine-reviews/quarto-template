@@ -25,7 +25,7 @@ Cela installe l'extension et créé un répertoire contenant un fichier `index.q
 Depuis le répertoire contenant le fichier .qmd ciblé :
 
 ```bash
-quarto add template rzine-reviews/rzine-article-template/
+quarto add rzine-reviews/rzine-article-template/
 ```
 
 ## II. Compiler le document
